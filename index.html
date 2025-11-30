@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brick Breaker Pro - 15 Levels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="game-wrapper">
+      <canvas id="gameCanvas" width="980" height="680"></canvas>
+      <div id="particles"></div>
+    </div>
+    
+    <div class="controls">
+      <div class="info-panel">
+        <div class="stat">
+          <span class="label">Score</span>
+          <span class="value" id="scoreValue">0</span>
+        </div>
+        <div class="stat">
+          <span class="label">Level</span>
+          <span class="value" id="levelValue">1/15</span>
+        </div>
+        <div class="stat">
+          <span class="label">Lives</span>
+          <span class="value hearts" id="livesValue">♥♥♥</span>
+        </div>
+      </div>
+      
+      <div class="button-panel">
+        <button id="pauseBtn" class="game-btn">Pause</button>
+        <button id="restartBtn" class="game-btn">Restart</button>
+      </div>
+      
+      <div class="instructions">
+        <div class="instruction-line">
+          <kbd>Space</kbd> Launch ball • <kbd>←</kbd> <kbd>→</kbd> Move paddle or use mouse
+        </div>
+        <div class="instruction-line">
+          <kbd>P</kbd> Pause • <kbd>Enter</kbd> Restart
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="game.js"></script>
+</body>
+</html>
